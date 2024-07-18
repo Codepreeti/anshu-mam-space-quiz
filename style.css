@@ -1,0 +1,99 @@
+body {
+    background-color: #000;
+    background-image: url('space.jpg'); /* Replace 'space.jpg' with your space-themed background image */
+    background-size: cover;
+    background-position: center;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(10, 8, 8, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+    position: relative; /* Added */
+}
+
+h1 {
+    text-align: center;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+.question p {
+    font-size: 18px;
+}
+
+.question label {
+    display: block;
+    margin-top: 10px;
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4775ff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3352b8;
+}
+
+#result {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Twinkling stars */
+.twinkling-star {
+    position: absolute;
+    background-color: #fff;
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    opacity: 0;
+}
+
+/* Adjust the number and position of twinkling stars as needed */
+.twinkling-star:nth-child(1) {
+    top: 100px;
+    left: 50px;
+    animation: twinkling 3s infinite alternate;
+}
+
+.twinkling-star:nth-child(2) {
+    top: 200px;
+    left: 250px;
+    animation: twinkling 4s infinite alternate;
+}
+
+.twinkling-star:nth-child(3) {
+    top: 300px;
+    left: 400px;
+    animation: twinkling 5s infinite alternate;
+}
+
+.twinkling-star:nth-child(4) {
+    top: 400px;
+    left: 600px;
+    animation: twinkling 6s infinite alternate;
+}
+
+@keyframes twinkling {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
